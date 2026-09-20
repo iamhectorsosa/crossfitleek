@@ -5,6 +5,9 @@ import "./globals.css";
 
 import { NextIntlClientProvider } from "next-intl";
 
+import { Footer } from "./components/footer";
+import { Navbar } from "./components/navbar";
+
 const montserratSans = Montserrat({
   variable: "--font-montserrat-sans",
   subsets: ["latin"],
@@ -25,9 +28,8 @@ const baseUrl = "https://crossfitleek.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   alternates: { canonical: baseUrl },
-  title: "Welcome to CrossFit Leek — Move like a human",
-  description:
-    "We help anyone who is serious about becoming strong and fit and is willing to work hard for it.",
+  title: "CrossFit Leek — Move like a human",
+  description: "Training die bij jou past. Een community die je motiveert.",
   keywords: [
     "CrossFit Leek",
     "CrossFit gym Netherlands",
@@ -46,12 +48,11 @@ export const metadata: Metadata = {
     "community fitness gym Netherlands",
   ],
   openGraph: {
-    title: "Welcome to CrossFit Leek — Move like a human",
-    description:
-      "We help anyone who is serious about becoming strong and fit and is willing to work hard for it.",
+    title: "CrossFit Leek — Move like a human",
+    description: "Training die bij jou past. Een community die je motiveert.",
     url: new URL(baseUrl),
     siteName: "CrossFit Leek",
-    locale: "en-US",
+    locale: "nl-NL",
     type: "website",
   },
 };
@@ -59,11 +60,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="nl"
       className={`${montserratSans.variable} ${oswaldSans.variable} ${interSans.variable} h-full bg-background antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

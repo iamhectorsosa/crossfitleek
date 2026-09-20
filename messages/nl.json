@@ -1,5 +1,31 @@
 {
   "CrossFitLeek": "CrossFit Leek",
   "CrossFitLeekLogo": "CrossFit Leek Logo",
-  "MoveLikeAHuman": "Move like a human"
+  "MoveLikeAHuman": "Move like a human",
+  "StartTrialForTwoWeeks": "Start 2 Proefweken",
+  "Stronger": "Sterker",
+  "Fitter": "Fitter",
+  "Together": "Samen",
+  "Home": {
+    "Tagline": "Training die bij jou past. Een community die je motiveert.",
+    "Description": "Bij CrossFit Leek train je om sterker, fitter en zelfverzekerder te worden. Of je nu al jaren sport, net begint of weer wilt opbouwen: je traint op jouw niveau, met goede coaching en een groep mensen die elkaar motiveert."
+  },
+  "Hero": {
+    "headlineLead": "Sterker. Fitter.",
+    "headlineAccent": "Samen.",
+    "subheadline": "Training die bij jou past. Een community die je motiveert.",
+    "tags": [
+      "CrossFit",
+      "Strength",
+      "Endurance",
+      "SWEAT",
+      "Kids",
+      "Teens",
+      "Personal Training"
+    ],
+    "body": "Bij CrossFit Leek train je om sterker, fitter en zelfverzekerder te worden. Of je nu al jaren sport, net begint of weer wilt opbouwen: je traint op jouw niveau, met goede coaching en een groep mensen die elkaar motiveert.",
+    "ctaIntro": "Start met 2 proefweken en ontdek of CrossFit Leek bij jou past.",
+    "ctaPrimary": "Start je proefweken",
+    "ctaSecondary": "Bekijk onze trainingen"
+  }
 }
