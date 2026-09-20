@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "allowArbitraryExtensions": true // next-intl
   },
   "include": [
     "next-env.d.ts",

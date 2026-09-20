@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat, Oswald, Inter } from "next/font/google";
+import { Inter, Montserrat, Oswald } from "next/font/google";
+
 import "./globals.css";
+
+import { NextIntlClientProvider } from "next-intl";
 
 const montserratSans = Montserrat({
   variable: "--font-montserrat-sans",
@@ -57,9 +60,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${montserratSans.variable} ${oswaldSans.variable} ${interSans.variable}  h-full antialiased bg-background`}
+      className={`${montserratSans.variable} ${oswaldSans.variable} ${interSans.variable} h-full bg-background antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="flex min-h-full flex-col font-sans">
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }
