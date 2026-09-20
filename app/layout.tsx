@@ -17,9 +17,11 @@ const interSans = Inter({
   subsets: ["latin"],
 });
 
+const baseUrl = "https://crossfitleek.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://crossfitleek.nl"),
-  alternates: { canonical: "https://crossfitleek.nl" },
+  metadataBase: new URL(baseUrl),
+  alternates: { canonical: baseUrl },
   title: "Welcome to CrossFit Leek — Move like a human",
   description:
     "We help anyone who is serious about becoming strong and fit and is willing to work hard for it.",
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
     title: "Welcome to CrossFit Leek — Move like a human",
     description:
       "We help anyone who is serious about becoming strong and fit and is willing to work hard for it.",
-    url: new URL("https://crossfitleek.nl"),
+    url: new URL(baseUrl),
     siteName: "CrossFit Leek",
     locale: "en-US",
     type: "website",
