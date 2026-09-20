@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-header: var(--font-montserrat-sans);
+  --font-header-secondary: var(--font-oswald-sans);
+  --font-sans: var(--font-inter-sans);
+}
+
+:root {
+  --background: #050505; /* near-black page background */
+  --foreground: #fafafa; /* off-white primary text (use on background, primary, secondary) */
+  --primary: #ff1616; /* brand red — from logo. CTAs, links, highlights */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
