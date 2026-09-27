@@ -6,28 +6,13 @@ export function Hero() {
 
   return (
     <section className="relative isolate flex min-h-[92vh] w-full items-end overflow-hidden">
-      {/*
-        Background photo placeholder.
-        Replace this block with a full-bleed <Image> of members training, e.g.:
-
-        <Image
-          src={heroPhoto}
-          alt=""
-          fill
-          priority
-          className="-z-10 object-cover"
-        />
-
-        Keep the gradient overlay below (or an equivalent one) so the text
-        stays legible on top of the photo.
-      */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_20%,_#1e1e1e,_#0a0a0a_65%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_20%,#1e1e1e,#0a0a0a_65%)]"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-background via-background/70 to-background/20"
+        className="absolute inset-0 -z-10 bg-linear-to-t from-background via-background/70 to-background/20"
       />
 
       <div className="mx-auto w-full max-w-6xl px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pb-24">
