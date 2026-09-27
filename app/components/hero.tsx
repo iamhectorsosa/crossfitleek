@@ -1,3 +1,4 @@
+import { cn } from "@/app/lib/utils";
 import { useTranslations } from "next-intl";
 
 export function Hero() {
@@ -6,59 +7,70 @@ export function Hero() {
 
   return (
     <section className="relative isolate flex min-h-[92vh] w-full items-end overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_20%,#1e1e1e,#0a0a0a_65%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-linear-to-t from-background via-background/70 to-background/20"
-      />
+      <div className="mx-auto w-full max-w-6xl space-y-6 px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pb-24">
+        <div className="space-y-3">
+          <h1 className="max-w-3xl font-header text-4xl font-extrabold tracking-tight text-foreground uppercase sm:text-6xl lg:text-7xl">
+            {t("Hero.headlineLead")}{" "}
+            <span className="text-primary">{t("Hero.headlineAccent")}</span>
+          </h1>
 
-      <div className="mx-auto w-full max-w-6xl px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pb-24">
-        <h1 className="max-w-3xl font-header text-4xl font-black tracking-tight text-foreground uppercase sm:text-6xl lg:text-7xl">
-          {t("Hero.headlineLead")}{" "}
-          <span className="text-primary">{t("Hero.headlineAccent")}</span>
-        </h1>
+          <p className="max-w-xl heading-styles text-base sm:text-lg">
+            {t("Hero.subheadline")}
+          </p>
+        </div>
 
-        <p className="mt-4 max-w-xl font-header-secondary text-base tracking-wide text-foreground/90 uppercase sm:text-lg">
-          {t("Hero.subheadline")}
-        </p>
+        <div className="group w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_3rem,black_calc(100%-3rem),transparent)]">
+          <div className="flex">
+            {[0, 1].map((setIdx) => (
+              <ul
+                key={setIdx}
+                aria-hidden={setIdx === 1 || undefined}
+                className="flex min-w-full shrink-0 animate-marquee items-center gap-2 px-1 group-hover:[animation-play-state:paused]"
+              >
+                {[...tags, ...tags].map((tag, i) => (
+                  <li
+                    key={tag + i}
+                    aria-hidden={i >= tags.length || undefined}
+                    className="flex items-center gap-2 heading-styles text-sm text-primary sm:text-base"
+                  >
+                    {tag}
+                    <span aria-hidden="true">·</span>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </div>
 
-        <ul className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1.5 font-header-secondary text-xs tracking-[0.1em] text-primary uppercase sm:text-sm">
-          {tags.map((tag, i) => (
-            <li key={tag} className="flex items-center gap-2">
-              {i > 0 && (
-                <span aria-hidden="true" className="text-muted-foreground">
-                  ·
-                </span>
-              )}
-              {tag}
-            </li>
-          ))}
-        </ul>
-
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/80 sm:text-lg">
+        <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           {t("Hero.body")}
         </p>
 
-        <p className="mt-6 max-w-xl font-header-secondary text-sm font-medium tracking-wide text-foreground uppercase sm:text-base">
-          {t("Hero.ctaIntro")}
-        </p>
+        <div className="space-y-3">
+          <p className="max-w-xl heading-styles text-base sm:text-lg">
+            {t("Hero.ctaIntro")}
+          </p>
 
-        <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-sm bg-primary px-6 py-3 font-header-secondary text-sm font-semibold tracking-[0.04em] text-foreground uppercase transition-colors hover:bg-primary/90"
-          >
-            {t("Hero.ctaPrimary")}
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-sm border border-border bg-secondary px-6 py-3 font-header-secondary text-sm font-semibold tracking-[0.04em] text-foreground uppercase transition-colors hover:bg-secondary/70"
-          >
-            {t("Hero.ctaSecondary")}
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#"
+              className={cn(
+                "button-styles",
+                "border border-primary bg-primary text-sm hover:bg-primary/90",
+              )}
+            >
+              {t("Hero.ctaPrimary")}
+            </a>
+            <a
+              href="#"
+              className={cn(
+                "button-styles",
+                "border border-border bg-secondary text-sm hover:bg-secondary/70",
+              )}
+            >
+              {t("Hero.ctaSecondary")}
+            </a>
+          </div>
         </div>
       </div>
     </section>

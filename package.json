@@ -12,6 +12,8 @@
     "lint:check": "eslint . --max-warnings 0 --report-unused-disable-directives"
   },
   "dependencies": {
+    "cn": "^0.4.0",
+    "cva": "1.0.0-beta.12",
     "next": "16.3.5",
     "next-intl": "^4.14.5",
     "react": "19.2.8",
@@ -28,7 +30,7 @@
     "prettier": "^3.9.8",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^6"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

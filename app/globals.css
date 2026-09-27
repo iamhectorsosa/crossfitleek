@@ -2,34 +2,62 @@
 
 @theme {
   --font-header: var(--font-montserrat-sans);
-  --font-header-secondary: var(--font-oswald-sans);
   --font-sans: var(--font-inter-sans);
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #fafafa;
-  --primary: #ff1616;
+  --primary: oklch(0.632 0.253 29);
 
-  --secondary: #1e1e1e;
-  --muted-foreground: #8c8c8c;
-  --card: #161616;
-  --border: #2e2e2e;
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.85 0 0);
+
+  --card: oklch(0.205 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --ring: oklch(0.556 0 0);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --color-primary: var(--primary);
 
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
   --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+
   --color-card: var(--card);
   --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --animate-marquee: slide 50s linear infinite;
 }
 
 @layer base {
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@utility heading-styles {
+  @apply font-header font-medium tracking-widest text-foreground uppercase;
+}
+
+@utility button-styles {
+  @apply font-header font-semibold tracking-widest whitespace-nowrap text-foreground uppercase;
+  @apply outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+  @apply disabled:pointer-events-none disabled:opacity-50;
+  @apply inline-flex items-center justify-center rounded-sm px-6 py-3 transition-colors;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-100%);
   }
 }

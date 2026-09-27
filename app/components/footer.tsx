@@ -14,7 +14,7 @@ export function Footer() {
           <Logo className="h-6 w-auto" />
         </Link>
 
-        <p className="font-header-secondary text-xs tracking-[0.14em] text-muted-foreground uppercase">
+        <p className="heading-styles text-sm text-muted-foreground">
           {t("CrossFitLeek")} {year}
         </p>
       </div>
