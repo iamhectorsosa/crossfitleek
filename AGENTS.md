@@ -10,51 +10,70 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## React Conventions
 
-### Files, Components and exports
+# React Conventions
 
-- Create component names using `PascalCase` and file names using `kebab-case` version of the component name.
-- Use **named exports** ONLY.
-- Make use to declare ALL components using React.FC pattern and make all imports use namespace imports.
+## Components & Files
 
-Here's an example that follows this convention:
+- Use `PascalCase` for components, `kebab-case` for files
+- Use **named exports only**
+- Define all components as `React.FC`
+- Use namespace imports for React
 
 ```tsx
 // path: app/components/hero.tsx
 import * as React from "react"
-export const Hero: React.FC = () => { //..
+
+export const Hero: React.FC = () => {
+  // ...
+}
 ```
 
-## Styling Conventions
+# Styling Conventions
 
-### Check globals.css
+## Design System First
 
-Check `app/globals.css` for existing colors and abstractedutility classes. Don't repeat classes or create arbritrary classes when you can use from this file.
+- Always check `app/globals.css` before adding new styles
+- Prefer existing design tokens/utilities over custom classes
+- Avoid duplicating or reinventing colors/styles
 
-- Avoid: "font-header font-medium uppercase"; Use: "heading-styles"
-- Avoid: "bg-[oklch(1_0_0)]/20"; Use: "bg-border"
+**Examples:**
 
-Avoid creating variations of existing colors via transparency. Just pick a color from the existing.
+- ❌ `font-header font-medium uppercase`
+- ✅ `heading-styles`
+- ❌ `bg-[oklch(1_0_0)]/20`
+- ✅ `bg-border`
 
-### Spacing
+Do not create opacity variants of existing colors—use predefined tokens.
 
-Use `space-*` utility functions instead of adding `mt-*` for spacing.
+## Spacing
 
-### Long utility classes
+- Prefer `space-*` utilities for layout spacing
+- Avoid `mt-*` unless absolutely necessary
 
-Use `cn` imported from `app/lib/utils.ts` to organizing utility classes for better readability by grouping them in logical classes. Here's an example of organized utility classes:
+## Utility Class Organization
 
-```
+Use `cn` from `app/lib/utils.ts` to structure long class strings:
+
+```tsx
 <p
   className={cn(
-    "text-base sm:text-lg", // text sizing utilities
-    "text-primary" // color utilities could also be `bg-*` instead
-    "flex flex-col sm:flex-row gap-3" // spacing utilities
-    // etc...
+    "text-base sm:text-lg",        // typography
+    "text-primary",                // color
+    "flex flex-col sm:flex-row",   // layout
+    "gap-3"                        // spacing
   )}
- />
+/>
 ```
 
-## Translations
+# Translations (i18n)
 
-- No hardcoded Dutch/english strings in component. Every string lives in `messages/nl.json` and `messages/en.json`.
-- Default local is `nl` (see `i18n/request.ts`) write Dutch copy as the primary content and English as a faithful translation.
+- No hardcoded UI strings in components
+
+- All strings must live in:
+
+  - `messages/nl.json`
+  - `messages/en.json`
+
+- Default locale: `nl` (`i18n/request.ts`)
+
+- Write **Dutch first**, English as faithful translation
