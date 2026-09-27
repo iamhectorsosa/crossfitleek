@@ -1,3 +1,4 @@
+import { Container } from "@/app/components/container";
 import { cn } from "@/app/lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -6,15 +7,15 @@ export function Hero() {
   const tags = t.raw("Hero.tags") as string[];
 
   return (
-    <section className="relative isolate flex min-h-[92vh] w-full items-end overflow-hidden">
-      <div className="mx-auto w-full max-w-6xl space-y-6 px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pb-24">
+    <section>
+      <Container className="space-y-6 pt-32 text-left lg:text-center">
         <div className="space-y-3">
-          <h1 className="max-w-3xl font-header text-4xl font-extrabold tracking-tight text-foreground uppercase sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl font-header text-4xl font-extrabold tracking-tight text-foreground uppercase sm:text-6xl lg:mx-auto lg:text-7xl">
             {t("Hero.headlineLead")}{" "}
             <span className="text-primary">{t("Hero.headlineAccent")}</span>
           </h1>
 
-          <p className="max-w-xl heading-styles text-base sm:text-lg">
+          <p className="max-w-xl heading-styles text-base sm:text-lg lg:mx-auto">
             {t("Hero.subheadline")}
           </p>
         </div>
@@ -42,16 +43,16 @@ export function Hero() {
           </div>
         </div>
 
-        <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+        <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-auto">
           {t("Hero.body")}
         </p>
 
         <div className="space-y-3">
-          <p className="max-w-xl heading-styles text-base sm:text-lg">
+          <p className="max-w-xl heading-styles text-base sm:text-lg lg:mx-auto">
             {t("Hero.ctaIntro")}
           </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex flex-col gap-3 sm:flex-row lg:justify-center">
             <a
               href="#"
               className={cn(
@@ -72,7 +73,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

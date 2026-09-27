@@ -27,5 +27,135 @@
     "ctaIntro": "Start with 2 trial weeks and discover if CrossFit Leek is right for you.",
     "ctaPrimary": "Start your trial weeks",
     "ctaSecondary": "View our training programs"
+  },
+  "Navbar": {
+    "links": {
+      "training": "Training",
+      "whyUs": "Why CrossFit Leek?",
+      "pricing": "Pricing",
+      "about": "About us",
+      "schedule": "Schedule",
+      "contact": "Contact"
+    },
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Intro": {
+    "heading": "More than a workout",
+    "paragraphs": [
+      "At CrossFit Leek, it's not just about a good workout.",
+      "We want you to learn to move better, get stronger, and enjoy training.",
+      "That's why every session includes guidance from a coach who helps you perform the exercises correctly and safely."
+    ],
+    "lines": [
+      "You don't have to be fit to start.",
+      "You don't need any CrossFit experience.",
+      "You only have to be willing to begin."
+    ],
+    "cta": "Discover how it works"
+  },
+  "Programs": {
+    "heading": "What suits you?",
+    "items": [
+      {
+        "title": "CrossFit",
+        "tagline": "For those who want to improve everything.",
+        "description": "Strength, conditioning, mobility, technique and skills come together in one complete training session. Every workout is different and scaled to your level.",
+        "cta": "Discover CrossFit"
+      },
+      {
+        "title": "Strength",
+        "tagline": "Get stronger. Get better.",
+        "description": "Strength sessions focus on building general strength in the key lifts. You'll learn solid technique and get stronger step by step.",
+        "cta": "Discover Strength"
+      },
+      {
+        "title": "Endurance",
+        "tagline": "More conditioning. More capacity.",
+        "description": "During Endurance you're moving almost nonstop for 35–45 minutes. Ideal preparation for a hybrid competition, a survival run, or simply getting fitter.",
+        "cta": "Discover Endurance"
+      },
+      {
+        "title": "SWEAT",
+        "tagline": "Get fitter at your own level.",
+        "description": "SWEAT is accessible for beginners and anyone picking up exercise again. You train at your own level in a small, motivating group.",
+        "cta": "Discover SWEAT"
+      },
+      {
+        "title": "Kids & Teens",
+        "tagline": "Get strong. Move. Have fun.",
+        "description": "We also offer training for kids and teens focused on movement, fun and development. They learn to move stronger and better, work together, and build confidence in what they can do.",
+        "cta": "Discover Kids & Teens"
+      },
+      {
+        "title": "Personal Training",
+        "tagline": "Full attention on your goal.",
+        "description": "With Personal Training you get one-on-one coaching fully tailored to your body, experience and goal.",
+        "cta": "Discover Personal Training"
+      }
+    ]
+  },
+  "WhyUs": {
+    "heading": "Why CrossFit Leek?",
+    "subheading": "With us you know what to do, why you're doing it, and how to get better.",
+    "items": [
+      {
+        "title": "Coaching",
+        "description": "You're never on your own. Our coaches guide you through every session and help you move better."
+      },
+      {
+        "title": "For every level",
+        "description": "From complete beginner to experienced athlete: exercises and weights are scaled to your level."
+      },
+      {
+        "title": "Real progress",
+        "description": "You're not just training to get tired. We work on strength, conditioning, technique, mobility and skills that actually move you forward."
+      },
+      {
+        "title": "Community",
+        "description": "You come for the training, but you stay for the people. At CrossFit Leek we know each other, train together and celebrate each other's progress."
+      }
+    ]
+  },
+  "Testimonials": {
+    "heading": "You don't have to be fit to start",
+    "paragraphs": [
+      "Never done CrossFit before? No problem.",
+      "You don't need to be able to do pull-ups. You don't need to lift a heavy barbell. And you certainly don't need to be in top shape.",
+      "Our coaches scale the training to your level."
+    ],
+    "boldLine": "Everyone starts somewhere.",
+    "closingLine": "All you have to do is take the first step.",
+    "cta": "Try 2 weeks",
+    "reviewsHeading": "Our members say it better than we do",
+    "reviews": [
+      {
+        "quote": "The coaching and the community here really make the difference. I look forward to every session.",
+        "name": "Name",
+        "since": "member since 2022"
+      },
+      {
+        "quote": "I'd never done sports before and felt welcome right away. The coaches scale everything to your level.",
+        "name": "Name",
+        "since": "member since 2023"
+      },
+      {
+        "quote": "The vibe is incredibly motivating. You're not just training for yourself, but for each other too.",
+        "name": "Name",
+        "since": "member since 2021"
+      }
+    ]
+  },
+  "FinalCta": {
+    "heading": "Ready to get started?",
+    "subheading": "Find out for yourself what CrossFit Leek can do for you.",
+    "paragraph": "No experience needed. No perfect fitness level needed. Come train for two weeks, meet our coaches, and find out if CrossFit Leek is right for you.",
+    "ctaPrimary": "Start your 2 trial weeks",
+    "questionLine": "Got a question first?",
+    "ctaSecondary": "Get in touch"
+  },
+  "Instagram": {
+    "heading": "This is CrossFit Leek",
+    "cta": "Follow us on Instagram"
   }
 }

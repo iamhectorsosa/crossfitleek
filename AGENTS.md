@@ -21,11 +21,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ```tsx
 // path: app/components/hero.tsx
-import * as React from "react"
+import * as React from "react";
 
 export const Hero: React.FC = () => {
   // ...
-}
+};
 ```
 
 # Styling Conventions
@@ -57,10 +57,10 @@ Use `cn` from `app/lib/utils.ts` to structure long class strings:
 ```tsx
 <p
   className={cn(
-    "text-base sm:text-lg",        // typography
-    "text-primary",                // color
-    "flex flex-col sm:flex-row",   // layout
-    "gap-3"                        // spacing
+    "text-base sm:text-lg", // typography
+    "text-primary", // color
+    "flex flex-col sm:flex-row", // layout
+    "gap-3", // spacing
   )}
 />
 ```
