@@ -8,9 +8,25 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
+## React Conventions
+
+### Files, Components and exports
+
+- Create component names using `PascalCase` and file names using `kebab-case` version of the component name.
+- Use **named exports** ONLY.
+- Make use to declare ALL components using React.FC pattern and make all imports use namespace imports.
+
+Here's an example that follows this convention:
+
+```tsx
+// path: app/components/hero.tsx
+import * as React from "react"
+export const Hero: React.FC = () => { //..
+```
+
 ## Styling Conventions
 
-## Check globals.css
+### Check globals.css
 
 Check `app/globals.css` for existing colors and abstractedutility classes. Don't repeat classes or create arbritrary classes when you can use from this file.
 
@@ -37,3 +53,8 @@ Use `cn` imported from `app/lib/utils.ts` to organizing utility classes for bett
   )}
  />
 ```
+
+## Translations
+
+- No hardcoded Dutch/english strings in component. Every string lives in `messages/nl.json` and `messages/en.json`.
+- Default local is `nl` (see `i18n/request.ts`) write Dutch copy as the primary content and English as a faithful translation.
