@@ -77,3 +77,12 @@ Use `cn` from `app/lib/utils.ts` to structure long class strings:
 - Default locale: `nl` (`i18n/request.ts`)
 
 - Write **Dutch first**, English as faithful translation
+
+# Verification
+
+These commands format and lint modified unstaged changes, tracked and untracked files.
+
+- Run `pnpm format:changed`
+- Run `pnpm lint:changed`
+
+There is no command available for changed files for `typecheck`. DO NOT run this command for verification.
