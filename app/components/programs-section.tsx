@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Container } from "@/app/components/container";
 import { ProgramCard } from "@/app/components/program-card";
+import { Container } from "@/app/components/ui/container";
 import { useTranslations } from "next-intl";
 
 type ProgramItem = {

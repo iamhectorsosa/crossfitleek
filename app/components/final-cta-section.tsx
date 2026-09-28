@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container } from "@/app/components/container";
+import { Container } from "@/app/components/ui/container";
 import { cn } from "@/app/lib/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";

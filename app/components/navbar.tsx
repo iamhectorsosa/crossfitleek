@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-import { Container } from "./container";
+import { Container } from "./ui/container";
 
 export const Navbar: React.FC = () => {
   const t = useTranslations();

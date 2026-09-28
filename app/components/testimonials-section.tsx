@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Container } from "@/app/components/container";
 import { TestimonialCard } from "@/app/components/testimonial-card";
+import { Container } from "@/app/components/ui/container";
 import { cn } from "@/app/lib/utils";
 import { useTranslations } from "next-intl";
 

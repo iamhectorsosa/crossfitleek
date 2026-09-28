@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container } from "@/app/components/container";
+import { Container } from "@/app/components/ui/container";
 import { ValuePropCard } from "@/app/components/value-prop-card";
 import { useTranslations } from "next-intl";
 
