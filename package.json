@@ -11,7 +11,7 @@
     "format:changed": "prettier $(git ls-files --modified --others --exclude-standard) --write",
     "lint": "eslint . --fix",
     "lint:check": "eslint . --max-warnings 0 --report-unused-disable-directives",
-    "lint:changed": "eslint $(git ls-files --modified --others --exclude-standard) --max-warnings 0 --report-unused-disable-directives",
+    "lint:changed": "eslint $(git ls-files --modified --others --exclude-standard) --max-warnings 0 --report-unused-disable-directives --no-warn-ignored",
     "typecheck": "pnpm tsc --noEmit"
   },
   "dependencies": {
