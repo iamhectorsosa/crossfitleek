@@ -16,8 +16,8 @@ export const Container: React.FC<ContainerProps> = ({
   const classes = cn("mx-auto w-full max-w-5xl px-4 py-16", className);
 
   if (!animate) {
-    return <section id={id} className={classes} {...props} />;
+    return <div id={id} className={classes} {...props} />;
   }
 
-  return <FadeIn className={classes} {...props} />;
+  return <FadeIn id={id} className={classes} {...props} />;
 };

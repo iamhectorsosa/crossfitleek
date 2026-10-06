@@ -10,8 +10,8 @@ export const IntroSection: React.FC = () => {
   const paragraphs = t.raw("Intro.paragraphs") as string[];
 
   return (
-    <section id="welkom-bij-crossfit-leek" className="bg-card">
-      <Container className="space-y-10 py-16 sm:py-24">
+    <div className="bg-card">
+      <Container id="welcome" className="scroll-pt-8 space-y-10 py-16 sm:py-24">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6 text-left">
             <h2 className="heading-styles text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
@@ -68,6 +68,6 @@ export const IntroSection: React.FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 };

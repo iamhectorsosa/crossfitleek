@@ -7,7 +7,7 @@ export function Hero() {
   const t = useTranslations();
 
   return (
-    <section className="relative isolate overflow-hidden">
+    <div className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="https://ix0lkyaphkycx1ct.public.blob.vercel-storage.com/photo-1.webp"
@@ -42,6 +42,6 @@ export function Hero() {
           </a>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }
