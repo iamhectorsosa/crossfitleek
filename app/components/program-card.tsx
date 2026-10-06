@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/app/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 type ProgramCardProps = {
@@ -7,7 +8,8 @@ type ProgramCardProps = {
   tagline: string;
   description: string;
   cta: string;
-  placeholderLabel: string;
+  imageSrc: string;
+  imageAlt: string;
 };
 
 export const ProgramCard: React.FC<ProgramCardProps> = ({
@@ -15,7 +17,8 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
   tagline,
   description,
   cta,
-  placeholderLabel,
+  imageSrc,
+  imageAlt,
 }) => {
   return (
     <article
@@ -25,14 +28,14 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
         "p-6",
       )}
     >
-      <div
-        className={cn(
-          "flex items-center justify-center rounded-sm border border-border bg-secondary/60 text-xs text-muted-foreground",
-          "aspect-4/3 w-full",
-        )}
-        aria-hidden="true"
-      >
-        {placeholderLabel}
+      <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-border">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover"
+        />
       </div>
 
       <h3 className="heading-styles text-lg">{title}</h3>
@@ -53,6 +56,7 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
         )}
       >
         {cta}
+        <span aria-hidden="true">&rarr;</span>
       </Link>
     </article>
   );

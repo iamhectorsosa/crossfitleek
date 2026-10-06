@@ -1,32 +1,12 @@
 {
   "CrossFitLeek": "CrossFit Leek",
   "CrossFitLeekLogo": "CrossFit Leek Logo",
-  "MoveLikeAHuman": "Move like a human",
-  "StartTrialForTwoWeeks": "Start 2 Proefweken",
-  "Stronger": "Sterker",
-  "Fitter": "Fitter",
-  "Together": "Samen",
-  "Home": {
-    "Tagline": "Training die bij jou past. Een community die je motiveert.",
-    "Description": "Bij CrossFit Leek train je om sterker, fitter en zelfverzekerder te worden. Of je nu al jaren sport, net begint of weer wilt opbouwen: je traint op jouw niveau, met goede coaching en een groep mensen die elkaar motiveert."
-  },
+  "StartTrialForTwoWeeks": "Proefperiode inplannen",
   "Hero": {
-    "headlineLead": "Sterker. Fitter.",
-    "headlineAccent": "Samen.",
-    "subheadline": "Training die bij jou past. Een community die je motiveert.",
-    "tags": [
-      "CrossFit",
-      "Strength",
-      "Endurance",
-      "SWEAT",
-      "Kids",
-      "Teens",
-      "Personal Training"
-    ],
-    "body": "Bij CrossFit Leek train je om sterker, fitter en zelfverzekerder te worden. Of je nu al jaren sport, net begint of weer wilt opbouwen: je traint op jouw niveau, met goede coaching en een groep mensen die elkaar motiveert.",
-    "ctaIntro": "Start met 2 proefweken en ontdek of CrossFit Leek bij jou past.",
-    "ctaPrimary": "Start je proefweken",
-    "ctaSecondary": "Bekijk onze trainingen"
+    "headlineLead": "Move like a",
+    "headlineAccent": "human",
+    "subheadline": "We helpen iedereen die serieus sterk en fit wil worden, en bereid is om daar hard voor te werken.",
+    "imageAlt": "Leden van CrossFit Leek tijdens een training"
   },
   "Navbar": {
     "links": {
@@ -41,121 +21,61 @@
     "closeMenu": "Sluit menu"
   },
   "Intro": {
-    "heading": "Meer dan een workout",
+    "heading": "Welkom bij CrossFit Leek",
     "paragraphs": [
-      "Bij CrossFit Leek draait het niet alleen om een goede workout.",
-      "We willen dat je beter leert bewegen, sterker wordt en plezier krijgt in trainen.",
-      "Daarom krijg je iedere training begeleiding van een coach die je helpt om de oefeningen goed en veilig uit te voeren."
+      "Sinds november 2024 helpen we de bewoners uit Leek, Roden, Zevenhuizen, Marum en alle andere omliggende dorpen aan een sterker lichaam en een sterkere geest. Dit doen we door middel van workouts die altijd aangepast kunnen worden aan ieders niveau.",
+      "We begrijpen dat het spannend is om de eerste stap te zetten om te gaan trainen. Er trainen hier ook best wat fitte mensen, maar de leden hier zijn ontzettend divers. Sommigen moeten fit blijven voor hun werk, anderen willen zich voorbereiden op een bepaalde fitness race zoals een HYROX. Maar de meeste mensen willen gewoon wat fitter worden.",
+      "Iedereen traint in dezelfde groep van gemiddeld 6-12 personen per les, ongeacht je niveau. Je moet ergens beginnen en iedereen heeft daar respect voor, want elk lid is ooit een keer een beginner geweest. Onze coaches zijn zeer ervaren en zijn gewend om bij elke les het een en ander voor je aan te passen, zodat je de workout kan uitvoeren op een manier wat voor jou het beste is."
     ],
-    "lines": [
-      "Je hoeft niet fit te zijn om te beginnen.",
-      "Je hoeft geen ervaring met CrossFit te hebben.",
-      "Je hoeft alleen bereid te zijn om te beginnen."
-    ],
-    "cta": "Ontdek hoe het werkt"
+    "closingLine": "Kom kennismaken met CrossFit door het 2 weken gratis uit te proberen en ontdek of CrossFit Leek bij jou past.",
+    "ctaSecondary": "Bekijk onze trainingen",
+    "imageAlt": "De CrossFit Leek box"
   },
   "Programs": {
-    "heading": "Wat past bij jou?",
+    "heading": "Ontdek onze lessen",
     "items": [
       {
         "title": "CrossFit",
         "tagline": "Voor wie alles wil verbeteren.",
         "description": "Kracht, conditie, mobiliteit, techniek en vaardigheden komen samen in één complete training. Iedere training is anders en wordt aangepast aan jouw niveau.",
-        "cta": "Ontdek CrossFit"
+        "cta": "Ontdek CrossFit",
+        "imageAlt": "Leden tijdens een CrossFit les"
       },
       {
         "title": "Strength",
         "tagline": "Sterker worden. Beter worden.",
-        "description": "Tijdens Strength ligt de focus op krachttraining en het ontwikkelen van algemene kracht in de belangrijkste lifts. Je leert technisch goed bewegen en stap voor stap sterker worden.",
-        "cta": "Ontdek Strength"
+        "description": "Wil je sterker worden en meer controle krijgen over gewichten? Tijdens Strength ligt de focus op krachttraining en het ontwikkelen van algemene kracht in de belangrijkste lifts. Je leert technisch goed bewegen en stap voor stap sterker worden.",
+        "cta": "Ontdek Strength",
+        "imageAlt": "Lid tijdens een Strength les"
       },
       {
         "title": "Endurance",
         "tagline": "Meer conditie. Meer capaciteit.",
-        "description": "Tijdens Endurance ben je 35–45 minuten vrijwel nonstop bezig. Ideaal als voorbereiding voor een hybrid competitie, een survivalrun of wanneer je simpelweg fitter wilt worden.",
-        "cta": "Ontdek Endurance"
+        "description": "Voor wie zijn conditie en werkcapaciteit naar een hoger niveau wil brengen. Tijdens Endurance ben je 35–45 minuten vrijwel nonstop bezig. Ideaal als voorbereiding voor een HYROX event, een survivalrun of wanneer je simpelweg fitter wilt worden.",
+        "cta": "Ontdek Endurance",
+        "imageAlt": "Leden aan het hardlopen, roeien en fietsen"
       },
       {
         "title": "SWEAT",
         "tagline": "Fitter worden op jouw niveau.",
-        "description": "SWEAT is toegankelijk voor beginners en voor iedereen die het sporten weer wil oppakken. Je traint op je eigen niveau in een kleine, motiverende groep.",
-        "cta": "Ontdek SWEAT"
+        "description": "Fitter worden, sterker voelen en lekker bewegen — zonder dat je al fit hoeft te zijn. SWEAT is toegankelijk voor beginners en voor iedereen die het sporten weer wil oppakken. Deze les is zeer geschikt voor de 60+ doelgroep. Je traint op je eigen niveau in een kleine, motiverende groep.",
+        "cta": "Ontdek SWEAT",
+        "imageAlt": "Een toegankelijke SWEAT groep"
       },
       {
         "title": "Kids & Teens",
         "tagline": "Sterk worden. Bewegen. Plezier maken.",
         "description": "Ook voor kinderen en jongeren hebben we trainingen waarin bewegen, plezier en ontwikkeling centraal staan. Ze leren sterker en beter bewegen, samenwerken en vertrouwen krijgen in wat ze kunnen.",
-        "cta": "Ontdek Kids & Teens"
+        "cta": "Ontdek Kids & Teens",
+        "imageAlt": "Kinderen en tieners tijdens een training"
       },
       {
         "title": "Personal Training",
         "tagline": "Volledige aandacht voor jouw doel.",
-        "description": "Met Personal Training krijg je één-op-één begeleiding die volledig wordt afgestemd op jouw lichaam, ervaring en doel.",
-        "cta": "Ontdek Personal Training"
+        "description": "Wil je gericht aan een specifiek doel werken? Met Personal Training krijg je één-op-één begeleiding die volledig wordt afgestemd op jouw lichaam, ervaring en doel.",
+        "cta": "Ontdek Personal Training",
+        "imageAlt": "Coach en sporter tijdens Personal Training"
       }
     ]
-  },
-  "WhyUs": {
-    "heading": "Waarom CrossFit Leek?",
-    "subheading": "Bij ons weet je wat je moet doen, waarom je het doet en hoe je beter kunt worden.",
-    "items": [
-      {
-        "title": "Coaching",
-        "description": "Je staat er niet alleen voor. Onze coaches begeleiden je tijdens iedere training en helpen je beter bewegen."
-      },
-      {
-        "title": "Voor elk niveau",
-        "description": "Van complete beginner tot ervaren sporter: oefeningen en gewichten worden aangepast aan jouw niveau."
-      },
-      {
-        "title": "Echte progressie",
-        "description": "Je traint niet zomaar om moe te worden. We werken aan kracht, conditie, techniek, mobiliteit en vaardigheden waarmee je daadwerkelijk vooruitgaat."
-      },
-      {
-        "title": "Community",
-        "description": "Je komt voor de training, maar blijft voor de mensen. Bij CrossFit Leek kennen we elkaar, trainen we samen en vieren we elkaars progressie."
-      }
-    ]
-  },
-  "Testimonials": {
-    "heading": "Je hoeft niet fit te zijn om te beginnen",
-    "paragraphs": [
-      "Nog nooit CrossFit gedaan? Geen probleem.",
-      "Je hoeft geen pull-ups te kunnen. Je hoeft geen zware barbell te kunnen tillen. En je hoeft al helemaal niet in topvorm te zijn.",
-      "Onze coaches passen de training aan jouw niveau aan."
-    ],
-    "boldLine": "Iedereen begint ergens.",
-    "closingLine": "Jij hoeft alleen de eerste stap te zetten.",
-    "cta": "Kom 2 weken proberen",
-    "reviewsHeading": "Onze leden zeggen het beter dan wij",
-    "reviews": [
-      {
-        "quote": "De coaching en de community hier maken echt het verschil. Ik kijk elke keer weer uit naar de volgende training.",
-        "name": "Naam",
-        "since": "lid sinds 2022"
-      },
-      {
-        "quote": "Ik was nog nooit aan sport gedaan en voelde me meteen welkom. De coaches passen alles aan jouw niveau aan.",
-        "name": "Naam",
-        "since": "lid sinds 2023"
-      },
-      {
-        "quote": "De sfeer is ontzettend motiverend. Je traint niet alleen voor jezelf, maar ook voor elkaar.",
-        "name": "Naam",
-        "since": "lid sinds 2021"
-      }
-    ]
-  },
-  "FinalCta": {
-    "heading": "Klaar om te beginnen?",
-    "subheading": "Ervaar zelf wat CrossFit Leek voor je kan betekenen.",
-    "paragraph": "Geen ervaring nodig. Geen perfecte conditie nodig. Kom twee weken trainen, leer onze coaches kennen en ontdek of CrossFit Leek bij jou past.",
-    "ctaPrimary": "Start je 2 proefweken",
-    "questionLine": "Liever eerst een vraag?",
-    "ctaSecondary": "Neem contact op"
-  },
-  "Instagram": {
-    "heading": "Dit is CrossFit Leek",
-    "cta": "Volg ons op Instagram"
   }
 }

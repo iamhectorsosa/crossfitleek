@@ -8,18 +8,14 @@ type ProgramItem = {
   tagline: string;
   description: string;
   cta: string;
+  imageAlt: string;
 };
 
-// Placeholder photo labels, sourced from the "Photo: ..." captions in the
-// content draft — dev-only annotations, not user-facing copy.
-const PLACEHOLDER_LABELS: Record<string, string> = {
-  CrossFit: "Foto: groepstraining",
-  Strength: "Foto: groepstraining",
-  Endurance: "Foto: hardlopen / roeien / fietsen",
-  SWEAT: "Foto: toegankelijke groep",
-  "Kids & Teens": "Foto: kids/teens training",
-  "Personal Training": "Foto: coach + sporter",
-};
+const BLOB_BASE_URL = "https://ix0lkyaphkycx1ct.public.blob.vercel-storage.com";
+
+// Programs.items is ordered CrossFit, Strength, Endurance, SWEAT,
+// Kids & Teens, Personal Training — matching photo-3.webp .. photo-8.webp.
+const PHOTO_START_INDEX = 3;
 
 export const ProgramsSection: React.FC = () => {
   const t = useTranslations();
@@ -33,16 +29,15 @@ export const ProgramsSection: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <ProgramCard
               key={item.title}
               title={item.title}
               tagline={item.tagline}
               description={item.description}
               cta={item.cta}
-              placeholderLabel={
-                PLACEHOLDER_LABELS[item.title] ?? "Foto: groepstraining"
-              }
+              imageSrc={`${BLOB_BASE_URL}/photo-${PHOTO_START_INDEX + index}.webp`}
+              imageAlt={item.imageAlt}
             />
           ))}
         </div>
