@@ -15,7 +15,7 @@ export function Footer() {
         className="flex flex-col items-center justify-between gap-4 py-8 sm:flex-row"
       >
         <Link href="/" aria-label={t("CrossFitLeek")}>
-          <Logo className="h-6 w-auto" />
+          <Logo className="size-6" />
         </Link>
 
         <p className="heading-styles text-sm text-muted-foreground">
