@@ -8,7 +8,7 @@ export const FullLogo: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <span
       className={cn(
-        "flex flex-wrap items-center gap-x-3",
+        "flex flex-wrap items-center gap-x-[0.2em]",
         "font-header text-lg font-extrabold tracking-[-0.01em] uppercase lg:text-2xl",
         className,
       )}
