@@ -49,6 +49,8 @@ Do not create opacity variants of existing colors—use predefined tokens.
 
 - Prefer `space-*` utilities for layout spacing
 - Avoid `mt-*` unless absolutely necessary
+- Create where needed a single breakpoint at `md:*`.
+- Use spacing in multiples of 4. i.e., `px-4 md:px-8`, `space-y-8 md:space-y-16`
 
 ## Utility Class Organization
 

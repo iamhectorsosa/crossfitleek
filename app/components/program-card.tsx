@@ -51,12 +51,11 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
       <Link
         href="#"
         className={cn(
-          "button-styles mt-auto gap-2",
+          "button-styles mt-auto",
           "border border-border bg-secondary text-sm hover:bg-secondary/70",
         )}
       >
         {cta}
-        <span aria-hidden="true">&rarr;</span>
       </Link>
     </article>
   );

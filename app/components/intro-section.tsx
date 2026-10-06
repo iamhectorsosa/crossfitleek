@@ -42,11 +42,11 @@ export const IntroSection: React.FC = () => {
         </div>
 
         <div className="space-y-4 text-left lg:text-center">
-          <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-auto">
+          <p className="mx-auto max-w-3xl heading-styles text-base sm:text-lg">
             {t("Intro.closingLine")}
           </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row lg:justify-center">
+          <div className="flex flex-col gap-4 sm:flex-row lg:justify-center">
             <a
               href="#"
               className={cn(
@@ -59,7 +59,7 @@ export const IntroSection: React.FC = () => {
             <Link
               href="#training"
               className={cn(
-                "button-styles gap-2",
+                "button-styles",
                 "border border-border bg-secondary text-sm hover:bg-secondary/70",
               )}
             >
