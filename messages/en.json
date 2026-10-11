@@ -9,15 +9,20 @@
   },
   "Navbar": {
     "links": {
-      "training": "Training",
-      "whyUs": "Why CrossFit Leek?",
-      "pricing": "Pricing",
       "about": "About us",
+      "offer": "Programs",
+      "crossfit": "CrossFit",
+      "sweat": "Sweat",
+      "kidsAndTeens": "Kids and teens",
+      "personalTraining": "Personal training",
+      "memberships": "Membership options",
       "schedule": "Schedule",
       "contact": "Contact"
     },
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "menuTitle": "Navigation",
+    "menuDescription": "Choose a page or section of the website"
   },
   "Intro": {
     "heading": "Welcome to CrossFit Leek",

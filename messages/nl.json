@@ -9,15 +9,20 @@
   },
   "Navbar": {
     "links": {
-      "training": "Training",
-      "whyUs": "Waarom CrossFit Leek?",
-      "pricing": "Tarieven",
       "about": "Over ons",
+      "offer": "Aanbod",
+      "crossfit": "CrossFit",
+      "sweat": "Sweat",
+      "kidsAndTeens": "Kids and teens",
+      "personalTraining": "Personal training",
+      "memberships": "Abonnementsvormen",
       "schedule": "Rooster",
       "contact": "Contact"
     },
     "openMenu": "Open menu",
-    "closeMenu": "Sluit menu"
+    "closeMenu": "Sluit menu",
+    "menuTitle": "Navigatie",
+    "menuDescription": "Kies een pagina of sectie van de website"
   },
   "Intro": {
     "heading": "Welkom bij CrossFit Leek",
