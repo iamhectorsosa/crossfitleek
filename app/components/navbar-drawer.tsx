@@ -79,7 +79,7 @@ export const NavbarDrawer: React.FC = () => {
         className={cn(
           "button-styles",
           "border border-border bg-secondary text-foreground hover:bg-secondary/70",
-          "px-2 py-2",
+          "px-1.5 py-1.5",
         )}
       >
         <MenuIcon />
@@ -128,7 +128,7 @@ export const NavbarDrawer: React.FC = () => {
                 className={cn(
                   "button-styles",
                   "border border-primary bg-primary text-sm hover:bg-primary/90",
-                  "px-4 py-2",
+                  "px-3 py-1.5",
                 )}
               />
             }
@@ -139,6 +139,7 @@ export const NavbarDrawer: React.FC = () => {
             className={cn(
               "button-styles",
               "border border-border bg-secondary text-sm hover:bg-secondary/70",
+              "px-3 py-1.5",
             )}
           >
             {t("Navbar.closeMenu")}

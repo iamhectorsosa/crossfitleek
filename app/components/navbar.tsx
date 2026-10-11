@@ -20,13 +20,13 @@ export const Navbar: React.FC = () => {
           <Logo className="size-6 w-auto" />
         </Link>
 
-        <div className="flex min-w-0 items-center gap-2 md:gap-4">
+        <div className="flex min-w-0 items-center gap-2">
           <a
             href="#"
             className={cn(
               "button-styles",
               "border border-primary bg-primary text-sm hover:bg-primary/90",
-              "px-4 py-2",
+              "px-3 py-1.5",
             )}
           >
             {t("StartTrialForTwoWeeks")}
