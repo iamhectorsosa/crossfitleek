@@ -15,6 +15,7 @@
     "typecheck": "pnpm tsc --noEmit"
   },
   "dependencies": {
+    "@base-ui/react": "^1.9.0",
     "cn": "^0.4.0",
     "cva": "1.0.0-beta.12",
     "next": "16.3.5",

@@ -41,7 +41,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply relative bg-background text-foreground;
   }
 }
 
